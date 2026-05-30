@@ -201,6 +201,24 @@ footer.foot .mono{font-size:12px}
 .subj h3{font-family:"Fraunces",serif;font-size:23px;font-weight:500;margin:7px 0 0}
 .subj p{font-size:14px;color:#3A352B;margin-top:9px;line-height:1.5}
 
+/* Research: featured study banner + article cards */
+.studynote{background:var(--teal-deep);color:#EAF3F0;border-radius:18px;padding:30px 32px;
+  display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap;margin-bottom:32px}
+.studynote .snote-pill{font-family:"JetBrains Mono",monospace;font-size:11px;letter-spacing:.1em;
+  text-transform:uppercase;color:#8FD3C8;display:inline-flex;align-items:center;gap:7px}
+.studynote .snote-pill::before{content:"";width:8px;height:8px;border-radius:50%;background:#8FD3C8;
+  box-shadow:0 0 0 4px rgba(143,211,200,.2)}
+.studynote h3{font-family:"Fraunces",serif;font-size:26px;font-weight:500;color:#fff;margin:12px 0 8px;letter-spacing:-.01em}
+.studynote p{color:#B7D3CC;max-width:48ch;font-size:15.5px}
+.snote-btn{background:var(--paper);color:var(--ink);border-color:var(--paper);white-space:nowrap}
+.snote-btn:hover{background:#fff;color:var(--teal-deep);border-color:#fff}
+.art{text-decoration:none}
+.art .art-meta{font-family:"JetBrains Mono",monospace;font-size:11px;color:var(--ink-mute);
+  letter-spacing:.08em;margin-bottom:11px}
+.art h3{font-family:"Fraunces",serif;font-size:21px;font-weight:500;line-height:1.2;margin-bottom:8px;letter-spacing:-.01em}
+.art p{font-size:14.5px;color:#3A352B;margin-bottom:16px}
+.art .art-link{margin-top:auto;color:var(--teal);font-weight:600;font-size:14.5px}
+
 /* ---------- RESPONSIVE ---------- */
 @media(max-width:880px){
   .hero-grid{grid-template-columns:1fr;gap:36px}
@@ -242,6 +260,7 @@ footer.foot .mono{font-size:12px}
       <a href="#skills">Skills</a>
       <a href="#mentoring">Mentoring</a>
       <a href="#teaching">Teaching</a>
+      <a href="#research">Research</a>
       <a class="btn" href="#contact">Get in touch</a>
     </nav>
   </div>
@@ -521,6 +540,55 @@ footer.foot .mono{font-size:12px}
       <a class="btn" href="https://ionian-leaf-53e.notion.site/COURSE-BREAKDOWN-fa828ebe329e47c6a978124dff5371c3" target="_blank" rel="noopener">See full course breakdown →</a>
       <!-- ▼ point to your booking page ▼ -->
       <a class="btn ghost" href="#book">Book 1-on-1 tutoring</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ RESEARCH & WRITING ============ -->
+<section id="research" style="background:var(--paper-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+  <div class="wrap">
+    <div class="sec-head reveal"><span class="sec-num mono">08</span><h2 class="serif">Research &amp; writing</h2></div>
+    <p class="reveal" style="max-width:64ch;color:var(--ink-mute);margin:-22px 0 36px;font-size:18px">
+      I run small studies on how real businesses actually operate, then write up what the data says. Part curiosity, part keeping my analysis sharp on messy, real-world problems.
+    </p>
+
+    <!-- Featured live study — this is how the vendor study is reached from the site -->
+    <div class="studynote reveal">
+      <div>
+        <span class="snote-pill">Live study</span>
+        <h3>How vendors in Nigeria sell online</h3>
+        <p>A look at how Instagram &amp; WhatsApp sellers really run their businesses — the bottlenecks, the tools, and the workarounds.</p>
+      </div>
+      <!-- links to the study page on this same site -->
+      <a class="btn snote-btn" href="vendor-study.html">Read &amp; take part →</a>
+    </div>
+
+    <!-- Articles. Duplicate a card below for each new Medium post. -->
+    <div class="proj-grid">
+
+      <a class="proj art reveal" href="#" target="_blank" rel="noopener">
+        <div class="art-meta">MEDIUM · [ DATE ]</div>
+        <h3>[ Your article title goes here ]</h3>
+        <p>[ One line on what the piece is about — e.g. what the vendor study revealed. ]</p>
+        <span class="art-link">Read on Medium →</span>
+      </a>
+
+      <a class="proj art reveal" href="#" target="_blank" rel="noopener">
+        <div class="art-meta">MEDIUM · [ DATE ]</div>
+        <h3>[ Another article title ]</h3>
+        <p>[ One-line summary. ]</p>
+        <span class="art-link">Read on Medium →</span>
+      </a>
+
+      <!-- ▼ COPY FROM HERE to add another article ▼
+      <a class="proj art reveal" href="PASTE_MEDIUM_LINK" target="_blank" rel="noopener">
+        <div class="art-meta">MEDIUM · DATE</div>
+        <h3>Title</h3>
+        <p>Summary.</p>
+        <span class="art-link">Read on Medium →</span>
+      </a>
+      ▲ TO HERE ▲ -->
+
     </div>
   </div>
 </section>
