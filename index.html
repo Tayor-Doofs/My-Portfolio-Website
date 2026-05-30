@@ -193,7 +193,7 @@ footer.foot .mono{font-size:12px}
 .ses-note{text-align:center;margin-top:30px;color:var(--ink-mute);font-size:14.5px}
 
 /* Teaching subjects */
-.subj-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.subj-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px}
 .subj{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px 20px;
   transition:transform .16s ease,border-color .16s}
 .subj:hover{transform:translateY(-3px);border-color:var(--line-strong)}
@@ -219,6 +219,15 @@ footer.foot .mono{font-size:12px}
 .art p{font-size:14.5px;color:#3A352B;margin-bottom:16px}
 .art .art-link{margin-top:auto;color:var(--teal);font-weight:600;font-size:14.5px}
 
+/* Teaching routes */
+.routes{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:28px}
+.route{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px;
+  display:flex;flex-direction:column}
+.route .lvl{font-family:"JetBrains Mono",monospace;font-size:11px;color:var(--teal);letter-spacing:.08em}
+.route h3{font-family:"Fraunces",serif;font-size:22px;font-weight:500;margin:8px 0 8px;letter-spacing:-.01em}
+.route p{font-size:14.5px;color:#3A352B;margin:0 0 18px;line-height:1.5}
+.route .acts{margin-top:auto;display:flex;gap:10px;flex-wrap:wrap}
+
 /* ---------- RESPONSIVE ---------- */
 @media(max-width:880px){
   .hero-grid{grid-template-columns:1fr;gap:36px}
@@ -226,6 +235,7 @@ footer.foot .mono{font-size:12px}
   .about-grid{grid-template-columns:1fr;gap:32px}
   .proj-grid{grid-template-columns:1fr}
   .subj-grid{grid-template-columns:1fr 1fr}
+  .routes{grid-template-columns:1fr}
   .skills-grid{grid-template-columns:1fr}
   .stats-grid{grid-template-columns:1fr 1fr}
   .stat:nth-child(2){border-right:none}
@@ -281,22 +291,14 @@ footer.foot .mono{font-size:12px}
       </div>
       <div class="hero-cta">
         <a class="btn" href="#projects">See selected work →</a>
-        <!-- Put your CV PDF next to this file (named below) for this to work -->
-        <a class="btn ghost" href="ODUTAYO_ODUFUWA_CV.pdf">Download CV</a>
+        <!-- CV lives in the Files folder -->
+        <a class="btn ghost" href="Files/ODUTAYO_ODUFUWA_CV.pdf">Download CV</a>
       </div>
     </div>
 
     <div class="portrait reveal">
       <div class="frame">
-        <!-- ▼▼ REPLACE THE PLACEHOLDER BELOW WITH YOUR PHOTO ▼▼
-             Save your headshot as  photo.jpg  next to this file, then replace
-             the whole <div class="ph">…</div> with:
-             <img src="photo.jpg" alt="Odutayo Odufuwa">
-        -->
-        <div class="ph">
-          <span class="mono">OO</span>
-          <small>Replace with your headshot<br>(see comment in the code)</small>
-        </div>
+        <img src="Files/photo.jpg" alt="Odutayo Odufuwa — data analyst, Lagos">
       </div>
       <span class="tag mono">6+ yrs in data</span>
     </div>
@@ -396,7 +398,7 @@ footer.foot .mono{font-size:12px}
       </article>
 
       <article class="proj reveal">
-        <div class="top"><h3>Customer health dashboard</h3><span class="yr mono">2025</span></div>
+        <div class="top"><h3>Customer health dashboard</h3><span class="yr mono">Jan 2025</span></div>
         <div class="row"><b>Problem</b>Hard to monitor churn risk across 100,000+ customers.</div>
         <div class="row"><b>What I did</b>Designed a Power BI dashboard with weighted churn parameters and presented findings to global stakeholders to align retention strategy.</div>
         <div class="row result"><b>Result</b>Reduced churn risk by 10%.</div>
@@ -448,7 +450,7 @@ footer.foot .mono{font-size:12px}
         <h3>Cloud &amp; tooling</h3>
         <div class="chips">
           <span class="chip">AWS (RDS · Redshift · S3)</span><span class="chip">Docker</span><span class="chip">Git</span>
-          <span class="chip">Excel (Pivot · VBA)</span><span class="chip">JIRA</span><span class="chip">Confluence</span>
+          <span class="chip">Zapier</span><span class="chip">Excel (Pivot · VBA)</span><span class="chip">JIRA</span><span class="chip">Confluence</span>
         </div>
       </div>
     </div>
@@ -487,9 +489,9 @@ footer.foot .mono{font-size:12px}
           <li>Written summary &amp; next steps after the call</li>
         </ul>
         <!-- ▼ set your real price ▼ -->
-        <div class="ses-price">from <span class="mono">₦[ price ]</span></div>
+        <div class="ses-price">from <span class="mono">₦[ 5000 ]</span></div>
         <!-- ▼ point href to your booking page (Stan / Selar / TidyCal) ▼ -->
-        <a class="btn book" href="#book">Book this →</a>
+        <a class="btn book" href="https://selar.com/781z515917" target="_blank" rel="noopener">Book this →</a>
       </article>
 
       <article class="proj ses reveal">
@@ -500,8 +502,8 @@ footer.foot .mono{font-size:12px}
           <li>Project framing that shows impact</li>
           <li>Concrete edits you can make the same day</li>
         </ul>
-        <div class="ses-price">from <span class="mono">₦[ price ]</span></div>
-        <a class="btn book" href="#book">Book this →</a>
+        <div class="ses-price">from <span class="mono">₦[ 10000 ]</span></div>
+        <a class="btn book" href="https://selar.com/781z515917" target="_blank" rel="noopener">Book this →</a>
       </article>
 
       <article class="proj ses reveal">
@@ -512,8 +514,8 @@ footer.foot .mono{font-size:12px}
           <li>Live, specific feedback</li>
           <li>A checklist to prep on your own</li>
         </ul>
-        <div class="ses-price">from <span class="mono">₦[ price ]</span></div>
-        <a class="btn book" href="#book">Book this →</a>
+        <div class="ses-price">from <span class="mono">₦[ 15000 ]</span></div>
+        <a class="btn book" href="https://selar.com/781z515917" target="_blank" rel="noopener">Book this →</a>
       </article>
 
     </div>
@@ -534,12 +536,27 @@ footer.foot .mono{font-size:12px}
       <div class="subj reveal"><div class="lvl mono">BEGINNER → ADVANCED</div><h3>SQL</h3><p>Queries, joins, window functions, and query optimisation.</p></div>
       <div class="subj reveal"><div class="lvl mono">BEGINNER → ADVANCED</div><h3>Power BI</h3><p>Data modelling, DAX, and dashboards that get used.</p></div>
       <div class="subj reveal"><div class="lvl mono">BEGINNER → ADVANCED</div><h3>Excel</h3><p>From formulas to pivot tables, and fast, clean analysis.</p></div>
+      <div class="subj reveal"><div class="lvl mono">BEGINNER → ADVANCED</div><h3>Automation</h3><p>Connect apps and remove the busywork with Zapier.</p></div>
     </div>
-    <div class="reveal" style="margin-top:30px;display:flex;gap:12px;flex-wrap:wrap;align-items:center">
-      <!-- ▼ your Notion course breakdown ▼ -->
-      <a class="btn" href="https://ionian-leaf-53e.notion.site/COURSE-BREAKDOWN-fa828ebe329e47c6a978124dff5371c3" target="_blank" rel="noopener">See full course breakdown →</a>
-      <!-- ▼ point to your booking page ▼ -->
-      <a class="btn ghost" href="#book">Book 1-on-1 tutoring</a>
+    <div class="routes">
+      <div class="route reveal">
+        <div class="lvl mono">SELF-PACED</div>
+        <h3>Learn at your own pace</h3>
+        <p>On-demand video courses you can take anytime — no live session needed. Launching soon on Teachable.</p>
+        <div class="acts">
+          <!-- public school URL (not the admin link) -->
+          <a class="btn ghost" href="https://odutayo-odufuwa-s-school.teachable.com" target="_blank" rel="noopener">Visit my school →</a>
+        </div>
+      </div>
+      <div class="route reveal">
+        <div class="lvl mono">LIVE · 1-ON-1</div>
+        <h3>Learn with me directly</h3>
+        <p>Private tutoring and live sessions, paced to you. See the full curriculum, then book a slot.</p>
+        <div class="acts">
+          <a class="btn" href="https://selar.com/781z515917" target="_blank" rel="noopener">Book a session →</a>
+          <a class="btn ghost" href="https://ionian-leaf-53e.notion.site/COURSE-BREAKDOWN-fa828ebe329e47c6a978124dff5371c3" target="_blank" rel="noopener">Course breakdown</a>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -603,10 +620,9 @@ footer.foot .mono{font-size:12px}
       <a class="btn ghost" href="tel:+2347065474266">+234 706 5474 266</a>
     </div>
     <div class="links" style="margin-top:14px">
-      <!-- ▼ Fill in your real profile URLs ▼ -->
-      <a class="btn ghost" href="#" target="_blank" rel="noopener">LinkedIn</a>
-      <a class="btn ghost" href="#" target="_blank" rel="noopener">GitHub</a>
-      <a class="btn ghost" href="#" target="_blank" rel="noopener">Credly</a>
+      <a class="btn ghost" href="https://www.linkedin.com/in/odutayo-odufuwa/" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn ghost" href="https://github.com/Tayor-Doofs" target="_blank" rel="noopener">GitHub</a>
+      <a class="btn ghost" href="https://www.credly.com/users/odutayo-odufuwa" target="_blank" rel="noopener">Credly</a>
     </div>
   </div>
 </section>
