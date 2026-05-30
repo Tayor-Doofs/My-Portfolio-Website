@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Odutayo Odufuwa — Data Analyst, Lagos</title>
+<meta name="description" content="Odutayo Odufuwa is a data analyst in Lagos with 6+ years turning FinTech data into decisions — dashboards, churn and risk models, and data platforms.">
+<meta property="og:title" content="Odutayo Odufuwa — Data Analyst">
+<meta property="og:description" content="6+ years turning FinTech data into decisions. Dashboards, ML models, and data platforms across African markets.">
+<meta property="og:type" content="website">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --paper:#FBF7EF;
+  --paper-2:#F4EEE1;
+  --card:#FFFDF8;
+  --ink:#181612;
+  --ink-soft:#56504552;
+  --ink-mute:#6A6256;
+  --teal:#0E5A52;
+  --teal-deep:#0A423C;
+  --ochre:#BC5A18;
+  --line:#E4DBCA;
+  --line-strong:#D6CAB4;
+  --maxw:1120px;
+  --r:16px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  background:var(--paper);color:var(--ink);
+  font-family:"Hanken Grotesk",system-ui,sans-serif;
+  font-size:17px;line-height:1.6;letter-spacing:-.01em;
+  -webkit-font-smoothing:antialiased;
+}
+.serif{font-family:"Fraunces",Georgia,serif}
+.mono{font-family:"JetBrains Mono",ui-monospace,monospace}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+.eyebrow{font-family:"JetBrains Mono",monospace;font-size:12px;letter-spacing:.18em;
+  text-transform:uppercase;color:var(--teal);font-weight:500}
+
+/* ---------- NAV ---------- */
+header.nav{position:sticky;top:0;z-index:50;background:rgba(251,247,239,.82);
+  backdrop-filter:saturate(150%) blur(10px);border-bottom:1px solid var(--line)}
+.nav-inner{max-width:var(--maxw);margin:0 auto;padding:14px 24px;
+  display:flex;align-items:center;justify-content:space-between}
+.brand{display:flex;align-items:center;gap:10px;font-weight:600}
+.brand .mark{width:34px;height:34px;border-radius:9px;background:var(--teal);color:#fff;
+  display:grid;place-items:center;font-family:"Fraunces",serif;font-weight:600;font-size:16px}
+.nav-links{display:flex;gap:28px;align-items:center}
+.nav-links a{font-size:15px;color:var(--ink-mute);font-weight:500;transition:color .2s}
+.nav-links a:hover{color:var(--ink)}
+.btn{display:inline-flex;align-items:center;gap:8px;background:var(--ink);color:var(--paper);
+  padding:11px 18px;border-radius:999px;font-weight:600;font-size:15px;
+  border:1px solid var(--ink);transition:transform .12s ease, background .2s}
+.btn:hover{transform:translateY(-1px);background:var(--teal-deep);border-color:var(--teal-deep)}
+.btn.ghost{background:transparent;color:var(--ink);border-color:var(--line-strong)}
+.btn.ghost:hover{background:var(--paper-2);color:var(--ink)}
+.nav-toggle{display:none;background:none;border:1px solid var(--line-strong);
+  border-radius:10px;width:42px;height:42px;cursor:pointer;font-size:20px}
+
+/* ---------- HERO ---------- */
+.hero{padding:84px 0 56px}
+.hero-grid{display:grid;grid-template-columns:1.35fr .85fr;gap:56px;align-items:center}
+.hero h1{font-family:"Fraunces",serif;font-weight:500;font-size:clamp(40px,6.4vw,76px);
+  line-height:1.02;letter-spacing:-.025em;margin:18px 0 0}
+.hero h1 em{font-style:italic;color:var(--teal)}
+.hero .lede{font-size:clamp(18px,2.1vw,21px);color:var(--ink-mute);max-width:34ch;margin:22px 0 0}
+.hero-meta{display:flex;gap:18px;align-items:center;margin-top:28px;flex-wrap:wrap}
+.loc{font-family:"JetBrains Mono",monospace;font-size:13px;color:var(--ink-mute);
+  display:inline-flex;align-items:center;gap:7px}
+.dot{width:7px;height:7px;border-radius:50%;background:var(--ochre)}
+.hero-cta{display:flex;gap:12px;margin-top:30px;flex-wrap:wrap}
+
+/* photo */
+.portrait{position:relative}
+.portrait .frame{aspect-ratio:4/5;border-radius:20px;overflow:hidden;
+  border:1px solid var(--line-strong);background:
+   linear-gradient(145deg,var(--paper-2),#EAE0CC);
+  display:grid;place-items:center;box-shadow:18px 18px 0 -2px var(--paper-2),18px 18px 0 -1px var(--line)}
+.portrait img{width:100%;height:100%;object-fit:cover;display:block}
+.portrait .ph{text-align:center;color:var(--ink-mute);padding:20px}
+.portrait .ph .mono{font-size:64px;color:var(--teal);font-weight:500;line-height:1}
+.portrait .ph small{display:block;margin-top:12px;font-size:12px;letter-spacing:.04em}
+.portrait .tag{position:absolute;left:-14px;bottom:26px;background:var(--ink);color:var(--paper);
+  font-family:"JetBrains Mono",monospace;font-size:12px;padding:8px 12px;border-radius:10px;
+  transform:rotate(-2deg)}
+
+/* ---------- STAT BAND ---------- */
+.stats{border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+  background:var(--paper-2)}
+.stats-grid{display:grid;grid-template-columns:repeat(4,1fr)}
+.stat{padding:34px 24px;border-right:1px solid var(--line)}
+.stat:last-child{border-right:none}
+.stat .num{font-family:"Fraunces",serif;font-size:clamp(34px,4.4vw,52px);
+  font-weight:500;letter-spacing:-.02em;line-height:1}
+.stat .num span{color:var(--ochre)}
+.stat .lbl{font-size:14px;color:var(--ink-mute);margin-top:8px}
+
+/* ---------- SECTIONS ---------- */
+section{padding:88px 0}
+.sec-head{display:flex;align-items:baseline;gap:16px;margin-bottom:40px}
+.sec-head h2{font-family:"Fraunces",serif;font-weight:500;font-size:clamp(28px,3.6vw,40px);
+  letter-spacing:-.02em}
+.sec-num{font-family:"JetBrains Mono",monospace;font-size:13px;color:var(--teal);
+  border:1px solid var(--line-strong);border-radius:999px;padding:4px 11px}
+
+/* About */
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+.about p{font-size:19px;color:#2C281F;margin-bottom:18px}
+.about p:last-child{margin-bottom:0}
+.about .lead{font-family:"Fraunces",serif;font-size:24px;line-height:1.4;color:var(--ink)}
+.cred-list{list-style:none;border-top:1px solid var(--line)}
+.cred-list li{display:flex;justify-content:space-between;gap:16px;padding:15px 0;
+  border-bottom:1px solid var(--line);font-size:15px}
+.cred-list li b{font-weight:600}
+.cred-list li span{color:var(--ink-mute);font-family:"JetBrains Mono",monospace;font-size:13px;white-space:nowrap}
+
+/* Experience */
+.timeline{border-left:2px solid var(--line-strong);margin-left:6px}
+.job{position:relative;padding:0 0 38px 30px}
+.job:last-child{padding-bottom:0}
+.job::before{content:"";position:absolute;left:-7px;top:6px;width:12px;height:12px;
+  border-radius:50%;background:var(--teal);border:3px solid var(--paper)}
+.job .when{font-family:"JetBrains Mono",monospace;font-size:12.5px;color:var(--ochre);letter-spacing:.02em}
+.job h3{font-size:20px;margin:3px 0 2px;font-weight:600}
+.job .co{color:var(--ink-mute);font-weight:500;margin-bottom:8px}
+.job p{font-size:15.5px;color:#3A352B}
+
+/* Projects */
+.proj-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.proj{background:var(--card);border:1px solid var(--line);border-radius:var(--r);
+  padding:26px;transition:transform .18s ease, box-shadow .18s ease, border-color .18s;display:flex;flex-direction:column}
+.proj:hover{transform:translateY(-3px);box-shadow:0 14px 30px -18px rgba(24,22,18,.4);border-color:var(--line-strong)}
+.proj .top{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;margin-bottom:14px}
+.proj h3{font-family:"Fraunces",serif;font-size:22px;font-weight:500;line-height:1.18;letter-spacing:-.01em}
+.proj .yr{font-family:"JetBrains Mono",monospace;font-size:12px;color:var(--ink-mute);white-space:nowrap;margin-top:4px}
+.proj .row{font-size:15px;margin-bottom:9px;color:#3A352B}
+.proj .row b{font-family:"JetBrains Mono",monospace;font-size:11px;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--teal);display:block;margin-bottom:2px;font-weight:500}
+.proj .result{color:var(--ink);font-weight:500}
+.proj .stack{margin-top:auto;padding-top:16px;display:flex;flex-wrap:wrap;gap:6px}
+.chip{font-family:"JetBrains Mono",monospace;font-size:11.5px;background:var(--paper-2);
+  border:1px solid var(--line);border-radius:7px;padding:4px 9px;color:var(--ink-mute)}
+
+/* Skills */
+.skills-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.skillcol h3{font-size:15px;font-family:"JetBrains Mono",monospace;letter-spacing:.08em;
+  text-transform:uppercase;color:var(--teal);margin-bottom:16px;font-weight:500}
+.skillcol .chips{display:flex;flex-wrap:wrap;gap:8px}
+.skillcol .chip{font-size:13px;padding:7px 12px;background:var(--card)}
+
+/* Certs */
+.certs{columns:2;column-gap:48px}
+.certs li{list-style:none;display:flex;justify-content:space-between;gap:16px;
+  padding:13px 0;border-bottom:1px solid var(--line);break-inside:avoid}
+.certs li span{font-family:"JetBrains Mono",monospace;font-size:12.5px;color:var(--ink-mute)}
+
+/* Contact / footer */
+.contact{background:var(--ink);color:var(--paper);border-radius:28px;
+  padding:64px 48px;text-align:center;margin:0 24px}
+.contact h2{font-family:"Fraunces",serif;font-weight:500;font-size:clamp(30px,5vw,52px);
+  letter-spacing:-.02em;line-height:1.05;margin-bottom:18px}
+.contact h2 em{font-style:italic;color:#8FD3C8}
+.contact p{color:#C9C2B5;max-width:46ch;margin:0 auto 30px;font-size:18px}
+.contact .links{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.contact .btn{background:var(--paper);color:var(--ink);border-color:var(--paper)}
+.contact .btn:hover{background:var(--teal);color:#fff;border-color:var(--teal);transform:translateY(-1px)}
+.contact .btn.ghost{background:transparent;color:var(--paper);border-color:#3A3730}
+.contact .btn.ghost:hover{background:#221F1A;color:#fff}
+footer.foot{padding:36px 0 48px;text-align:center;color:var(--ink-mute);font-size:13.5px}
+footer.foot .mono{font-size:12px}
+
+/* reveal animation */
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+
+/* Mentoring / sessions */
+.ses{position:relative}
+.ses-list{list-style:none;margin:4px 0 0;padding:0}
+.ses-list li{position:relative;padding:6px 0 6px 22px;font-size:14.5px;color:#3A352B;border:none}
+.ses-list li::before{content:"→";position:absolute;left:0;color:var(--teal);font-family:"JetBrains Mono",monospace}
+.ses-price{margin-top:auto;padding-top:18px;font-size:14px;color:var(--ink-mute)}
+.ses-price .mono{font-size:23px;color:var(--ink);font-weight:500;letter-spacing:-.01em}
+.ses .book{margin-top:14px;justify-content:center;width:100%}
+.pop{position:absolute;top:-11px;right:18px;background:var(--ochre);color:#fff;
+  font-family:"JetBrains Mono",monospace;font-size:11px;letter-spacing:.04em;padding:4px 10px;border-radius:8px}
+.ses-note{text-align:center;margin-top:30px;color:var(--ink-mute);font-size:14.5px}
+
+/* Teaching subjects */
+.subj-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.subj{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px 20px;
+  transition:transform .16s ease,border-color .16s}
+.subj:hover{transform:translateY(-3px);border-color:var(--line-strong)}
+.subj .lvl{font-family:"JetBrains Mono",monospace;font-size:11px;color:var(--teal);letter-spacing:.06em}
+.subj h3{font-family:"Fraunces",serif;font-size:23px;font-weight:500;margin:7px 0 0}
+.subj p{font-size:14px;color:#3A352B;margin-top:9px;line-height:1.5}
+
+/* ---------- RESPONSIVE ---------- */
+@media(max-width:880px){
+  .hero-grid{grid-template-columns:1fr;gap:36px}
+  .portrait{max-width:340px}
+  .about-grid{grid-template-columns:1fr;gap:32px}
+  .proj-grid{grid-template-columns:1fr}
+  .subj-grid{grid-template-columns:1fr 1fr}
+  .skills-grid{grid-template-columns:1fr}
+  .stats-grid{grid-template-columns:1fr 1fr}
+  .stat:nth-child(2){border-right:none}
+  .stat:nth-child(1),.stat:nth-child(2){border-bottom:1px solid var(--line)}
+  .certs{columns:1}
+  .nav-links{display:none;position:absolute;top:100%;left:0;right:0;background:var(--paper);
+    border-bottom:1px solid var(--line);flex-direction:column;gap:0;padding:8px 24px 18px}
+  .nav-links.open{display:flex}
+  .nav-links a{padding:12px 0;border-bottom:1px solid var(--line);width:100%}
+  .nav-links .btn{margin-top:10px;justify-content:center}
+  .nav-toggle{display:block}
+  section{padding:64px 0}
+  .contact{padding:48px 26px;border-radius:22px}
+}
+@media(prefers-reduced-motion:reduce){
+  .reveal{opacity:1;transform:none;transition:none}
+  html{scroll-behavior:auto}
+}
+</style>
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<header class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="#top"><span class="mark serif">OO</span> Odutayo Odufuwa</a>
+    <button class="nav-toggle" aria-label="Menu" aria-expanded="false">☰</button>
+    <nav class="nav-links">
+      <a href="#about">About</a>
+      <a href="#work">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#mentoring">Mentoring</a>
+      <a href="#teaching">Teaching</a>
+      <a class="btn" href="#contact">Get in touch</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="reveal">
+      <span class="eyebrow">Data Analyst · FinTech</span>
+      <h1 class="serif">I turn messy data into <em>decisions</em> businesses can act on.</h1>
+      <p class="lede">Six years building the dashboards, models, and data platforms behind FinTech products used across African markets.</p>
+      <div class="hero-meta">
+        <span class="loc mono"><span class="dot"></span> Yaba, Lagos · Nigeria</span>
+        <span class="loc mono">Lead, Data &amp; Insights @ PESA</span>
+      </div>
+      <div class="hero-cta">
+        <a class="btn" href="#projects">See selected work →</a>
+        <!-- Put your CV PDF next to this file (named below) for this to work -->
+        <a class="btn ghost" href="ODUTAYO_ODUFUWA_CV.pdf">Download CV</a>
+      </div>
+    </div>
+
+    <div class="portrait reveal">
+      <div class="frame">
+        <!-- ▼▼ REPLACE THE PLACEHOLDER BELOW WITH YOUR PHOTO ▼▼
+             Save your headshot as  photo.jpg  next to this file, then replace
+             the whole <div class="ph">…</div> with:
+             <img src="photo.jpg" alt="Odutayo Odufuwa">
+        -->
+        <div class="ph">
+          <span class="mono">OO</span>
+          <small>Replace with your headshot<br>(see comment in the code)</small>
+        </div>
+      </div>
+      <span class="tag mono">6+ yrs in data</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STAT BAND ============ -->
+<div class="stats reveal">
+  <div class="wrap" style="padding:0">
+    <div class="stats-grid">
+      <div class="stat"><div class="num serif">500K<span>+</span></div><div class="lbl">transactions analysed for churn modelling</div></div>
+      <div class="stat"><div class="num serif">+12<span>%</span></div><div class="lbl">customer retention from ML-driven targeting</div></div>
+      <div class="stat"><div class="num serif">−20<span>%</span></div><div class="lbl">fraud losses via a dynamic risk model</div></div>
+      <div class="stat"><div class="num serif">9</div><div class="lbl">African markets supported with live reporting</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ ABOUT ============ -->
+<section id="about">
+  <div class="wrap">
+    <div class="sec-head reveal"><span class="sec-num mono">01</span><h2 class="serif">About</h2></div>
+    <div class="about-grid">
+      <div class="about reveal">
+        <p class="lead">I'm Odutayo — a data analyst in Lagos with six years turning FinTech data into decisions.</p>
+        <p>Most of that time has been at companies like Flutterwave and First Bank, building the dashboards, churn and risk models, and data pipelines that help teams see what's actually happening — and do something about it. The part I enjoy most is the unglamorous bit: cleaning the mess, asking the awkward question, and getting to an answer a business can move on.</p>
+        <p>Today I lead Data &amp; Insights at PESA, where I own the reporting that drives product and growth decisions. I'm a Microsoft Certified Data Analyst and AWS Cloud Practitioner, with an MSc in Information Technology from the University of Lagos and a background in Computer Science.</p>
+        <p>If you've got a data problem that's been nagging you, I'd genuinely like to hear about it.</p>
+      </div>
+      <div class="reveal">
+        <ul class="cred-list">
+          <li><b>M.Sc. Information Technology</b><span>Univ. of Lagos · 2023</span></li>
+          <li><b>Data Science Accelerator</b><span>EDSA · 2022</span></li>
+          <li><b>B.Sc. Computer Science</b><span>LASU · 2015</span></li>
+          <li><b>Microsoft Certified Data Analyst</b><span>MCDA · 2021</span></li>
+          <li><b>AWS Cloud Practitioner</b><span>2024</span></li>
+          <li><b>Microsoft Azure AI Fundamentals</b><span>2025</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EXPERIENCE ============ -->
+<section id="work" style="background:var(--paper-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+  <div class="wrap">
+    <div class="sec-head reveal"><span class="sec-num mono">02</span><h2 class="serif">Experience</h2></div>
+    <div class="timeline">
+      <div class="job reveal">
+        <div class="when mono">DEC 2025 — PRESENT</div>
+        <h3>Lead, Data &amp; Insights</h3>
+        <div class="co">PESA</div>
+        <p>Own the design and delivery of organisational dashboards and reporting. Partner with Product, Growth, and Compliance to define KPIs, run deep-dives on corridor performance and retention, and drive A/B testing and feature-impact measurement.</p>
+      </div>
+      <div class="job reveal">
+        <div class="when mono">JUL 2023 — NOV 2025</div>
+        <h3>Senior Associate, Data Science &amp; AI</h3>
+        <div class="co">Flutterwave</div>
+        <p>Built real-time Power BI dashboards monitoring transaction success across nine African markets (+15% performance). Authored complex SQL to cut reporting time 30%, designed AWS warehouse structures, and automated workflows with Python &amp; dbt (10 hrs/week saved). Built a company-wide NLP report platform on Slack.</p>
+      </div>
+      <div class="job reveal">
+        <div class="when mono">SEP 2021 — JUL 2023</div>
+        <h3>Associate, Risk Data Analyst</h3>
+        <div class="co">Flutterwave</div>
+        <p>Built a dynamic risk-rating model classifying 1,000+ merchants, cutting fraud incidents 20%. Designed Power BI dashboards for 20+ stakeholders and automated SQL reports flagging suspicious transactions (+25% detection efficiency).</p>
+      </div>
+      <div class="job reveal">
+        <div class="when mono">MAY 2018 — AUG 2021</div>
+        <h3>Relationship Manager / Analyst</h3>
+        <div class="co">First Bank — Customer Experience &amp; Value Management</div>
+        <p>Built Excel and Power BI sales dashboards to analyse customer behaviour, generating qualified leads that lifted revenue 10% through targeted cross-selling. Mentored 15+ team members on advanced Excel and analysis.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROJECTS ============ -->
+<section id="projects">
+  <div class="wrap">
+    <div class="sec-head reveal"><span class="sec-num mono">03</span><h2 class="serif">Selected projects</h2></div>
+    <div class="proj-grid">
+
+      <article class="proj reveal">
+        <div class="top"><h3>Conversational AI &amp; data platform</h3><span class="yr mono">2025</span></div>
+        <div class="row"><b>Problem</b>Teams couldn't quickly find or trust the right reports across the company.</div>
+        <div class="row"><b>What I did</b>Built a conversational AI agent with a data pipeline consolidating report metadata as its knowledge base, Slack integration for real-time queries, and automated data-quality and governance checks.</div>
+        <div class="row result"><b>Result</b>Real-time, governed report access right inside Slack.</div>
+        <div class="stack"><span class="chip">Python</span><span class="chip">SQL</span><span class="chip">N8N</span><span class="chip">Slack</span><span class="chip">dbt</span></div>
+      </article>
+
+      <article class="proj reveal">
+        <div class="top"><h3>Customer churn prediction model</h3><span class="yr mono">2025</span></div>
+        <div class="row"><b>Problem</b>Needed to spot at-risk customers early across African markets.</div>
+        <div class="row"><b>What I did</b>Built an XGBoost churn model on 500,000+ transactions and surfaced churn scores in interactive Power BI dashboards for targeted retention.</div>
+        <div class="row result"><b>Result</b>Improved retention by 12%.</div>
+        <div class="stack"><span class="chip">Python</span><span class="chip">scikit-learn</span><span class="chip">SQL</span><span class="chip">Power BI</span></div>
+      </article>
+
+      <article class="proj reveal">
+        <div class="top"><h3>Customer health dashboard</h3><span class="yr mono">2025</span></div>
+        <div class="row"><b>Problem</b>Hard to monitor churn risk across 100,000+ customers.</div>
+        <div class="row"><b>What I did</b>Designed a Power BI dashboard with weighted churn parameters and presented findings to global stakeholders to align retention strategy.</div>
+        <div class="row result"><b>Result</b>Reduced churn risk by 10%.</div>
+        <div class="stack"><span class="chip">Power BI</span><span class="chip">DAX</span><span class="chip">SQL</span></div>
+      </article>
+
+      <article class="proj reveal">
+        <div class="top"><h3>Merchant pricing app</h3><span class="yr mono">2024</span></div>
+        <div class="row"><b>Problem</b>Manual pricing analysis for 50+ merchants was slow and error-prone.</div>
+        <div class="row"><b>What I did</b>Built a Streamlit pricing app (Python, SQL, Power BI) automating the analysis, with scalable SQL tables designed alongside data engineers.</div>
+        <div class="row result"><b>Result</b>Saved 5 hrs/week and lifted revenue 8%.</div>
+        <div class="stack"><span class="chip">Python</span><span class="chip">Streamlit</span><span class="chip">SQL</span><span class="chip">Power BI</span></div>
+      </article>
+
+      <article class="proj reveal">
+        <div class="top"><h3>Dynamic risk-rating model</h3><span class="yr mono">2022</span></div>
+        <div class="row"><b>Problem</b>Fraud losses needed a systematic way to score merchant risk.</div>
+        <div class="row"><b>What I did</b>Built a Python/SQL model classifying 1,000+ merchants into risk levels, with automated ETL writing ratings to a dedicated table.</div>
+        <div class="row result"><b>Result</b>Reduced fraud losses by 20%.</div>
+        <div class="stack"><span class="chip">Python</span><span class="chip">SQL</span><span class="chip">ETL</span></div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ SKILLS ============ -->
+<section id="skills" style="background:var(--paper-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+  <div class="wrap">
+    <div class="sec-head reveal"><span class="sec-num mono">04</span><h2 class="serif">Toolkit</h2></div>
+    <div class="skills-grid">
+      <div class="skillcol reveal">
+        <h3>Visualisation</h3>
+        <div class="chips">
+          <span class="chip">Power BI</span><span class="chip">DAX</span><span class="chip">Power Query / M</span>
+          <span class="chip">Tableau</span><span class="chip">Looker</span><span class="chip">Grafana</span>
+          <span class="chip">Seaborn</span><span class="chip">Jupyter</span>
+        </div>
+      </div>
+      <div class="skillcol reveal">
+        <h3>Programming &amp; ETL</h3>
+        <div class="chips">
+          <span class="chip">SQL (Postgres / MySQL / MSSQL)</span><span class="chip">Window functions</span><span class="chip">CTEs</span>
+          <span class="chip">Python</span><span class="chip">pandas</span><span class="chip">numpy</span>
+          <span class="chip">scikit-learn</span><span class="chip">Streamlit</span><span class="chip">A/B testing</span><span class="chip">dbt</span>
+        </div>
+      </div>
+      <div class="skillcol reveal">
+        <h3>Cloud &amp; tooling</h3>
+        <div class="chips">
+          <span class="chip">AWS (RDS · Redshift · S3)</span><span class="chip">Docker</span><span class="chip">Git</span>
+          <span class="chip">Excel (Pivot · VBA)</span><span class="chip">JIRA</span><span class="chip">Confluence</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="sec-head reveal" style="margin-top:64px"><span class="sec-num mono">05</span><h2 class="serif">Certifications</h2></div>
+    <ul class="certs reveal">
+      <li><b>Microsoft Certified Data Analyst Associate</b><span>2021</span></li>
+      <li><b>Microsoft Azure AI Fundamentals</b><span>2025</span></li>
+      <li><b>AWS Cloud Practitioner</b><span>2024</span></li>
+      <li><b>ALX Cloud Computing Program</b><span>2024</span></li>
+      <li><b>KaggleX Mentorship Program</b><span>2023</span></li>
+      <li><b>Data Science Accelerator — EDSA</b><span>2022</span></li>
+      <li><b>Data Analytics Consulting — KPMG</b><span>2020</span></li>
+      <li><b>IBM Big Data Specialist</b><span>2015</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ MENTORING ============ -->
+<section id="mentoring" style="background:var(--paper-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+  <div class="wrap">
+    <div class="sec-head reveal"><span class="sec-num mono">06</span><h2 class="serif">Work with me, 1-on-1</h2></div>
+    <p class="reveal" style="max-width:62ch;color:var(--ink-mute);margin:-22px 0 38px;font-size:18px">
+      Trying to break into data, or stuck mid-level and want to move faster? I mentor analysts and career-switchers using the same path that took me from a bank branch to leading data at a fintech. Sessions are limited each month, around my full-time work.
+    </p>
+
+    <div class="proj-grid">
+
+      <article class="proj ses reveal">
+        <span class="pop">Most booked</span>
+        <div class="top"><h3>Career Strategy Call</h3><span class="yr mono">45 min</span></div>
+        <div class="row">An honest, practical plan for breaking into data or levelling up — what to learn, what to skip, and how to actually land the role.</div>
+        <ul class="ses-list">
+          <li>Where you are now &amp; a realistic target</li>
+          <li>A skills roadmap tailored to you</li>
+          <li>Written summary &amp; next steps after the call</li>
+        </ul>
+        <!-- ▼ set your real price ▼ -->
+        <div class="ses-price">from <span class="mono">₦[ price ]</span></div>
+        <!-- ▼ point href to your booking page (Stan / Selar / TidyCal) ▼ -->
+        <a class="btn book" href="#book">Book this →</a>
+      </article>
+
+      <article class="proj ses reveal">
+        <div class="top"><h3>CV &amp; Portfolio Review</h3><span class="yr mono">45 min</span></div>
+        <div class="row">A line-by-line review of your CV and portfolio from someone who has sat on the hiring side — so you stop getting filtered out before the interview.</div>
+        <ul class="ses-list">
+          <li>What's helping vs. hurting you</li>
+          <li>Project framing that shows impact</li>
+          <li>Concrete edits you can make the same day</li>
+        </ul>
+        <div class="ses-price">from <span class="mono">₦[ price ]</span></div>
+        <a class="btn book" href="#book">Book this →</a>
+      </article>
+
+      <article class="proj ses reveal">
+        <div class="top"><h3>Mock Technical Interview</h3><span class="yr mono">60 min</span></div>
+        <div class="row">A realistic data interview — SQL, analytics reasoning, and a case — with direct feedback on where you'd lose points and how to fix it.</div>
+        <ul class="ses-list">
+          <li>SQL &amp; analytical case practice</li>
+          <li>Live, specific feedback</li>
+          <li>A checklist to prep on your own</li>
+        </ul>
+        <div class="ses-price">from <span class="mono">₦[ price ]</span></div>
+        <a class="btn book" href="#book">Book this →</a>
+      </article>
+
+    </div>
+
+    <p class="ses-note reveal">Not sure which fits? <a href="mailto:tayodufuwa@gmail.com" style="color:var(--teal);font-weight:600">Send me a message</a> and I'll point you to the right one.</p>
+  </div>
+</section>
+
+<!-- ============ TEACHING ============ -->
+<section id="teaching">
+  <div class="wrap">
+    <div class="sec-head reveal"><span class="sec-num mono">07</span><h2 class="serif">Teaching &amp; facilitation</h2></div>
+    <p class="reveal" style="max-width:64ch;color:var(--ink-mute);margin:-22px 0 36px;font-size:18px">
+      Alongside my work, I train people in data — from total beginners to advanced — as a facilitator at <b style="color:var(--ink)">Dataleum</b> and <b style="color:var(--ink)">Byte Analytics</b>, plus private one-on-one tutoring.
+    </p>
+    <div class="subj-grid">
+      <div class="subj reveal"><div class="lvl mono">BEGINNER → ADVANCED</div><h3>Python</h3><p>From first script to pandas, EDA, and automation.</p></div>
+      <div class="subj reveal"><div class="lvl mono">BEGINNER → ADVANCED</div><h3>SQL</h3><p>Queries, joins, window functions, and query optimisation.</p></div>
+      <div class="subj reveal"><div class="lvl mono">BEGINNER → ADVANCED</div><h3>Power BI</h3><p>Data modelling, DAX, and dashboards that get used.</p></div>
+      <div class="subj reveal"><div class="lvl mono">BEGINNER → ADVANCED</div><h3>Excel</h3><p>From formulas to pivot tables, and fast, clean analysis.</p></div>
+    </div>
+    <div class="reveal" style="margin-top:30px;display:flex;gap:12px;flex-wrap:wrap;align-items:center">
+      <!-- ▼ your Notion course breakdown ▼ -->
+      <a class="btn" href="https://ionian-leaf-53e.notion.site/COURSE-BREAKDOWN-fa828ebe329e47c6a978124dff5371c3" target="_blank" rel="noopener">See full course breakdown →</a>
+      <!-- ▼ point to your booking page ▼ -->
+      <a class="btn ghost" href="#book">Book 1-on-1 tutoring</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section id="contact" style="padding-bottom:48px">
+  <div class="contact reveal">
+    <h2 class="serif">Got a data problem <em>worth solving?</em></h2>
+    <p>Whether it's a dashboard that should exist, a model you're not sure about, or numbers that won't add up — let's talk.</p>
+    <div class="links">
+      <a class="btn" href="mailto:tayodufuwa@gmail.com">tayodufuwa@gmail.com</a>
+      <a class="btn ghost" href="tel:+2347065474266">+234 706 5474 266</a>
+    </div>
+    <div class="links" style="margin-top:14px">
+      <!-- ▼ Fill in your real profile URLs ▼ -->
+      <a class="btn ghost" href="#" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn ghost" href="#" target="_blank" rel="noopener">GitHub</a>
+      <a class="btn ghost" href="#" target="_blank" rel="noopener">Credly</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <span class="mono">© <span id="yr"></span> Odutayo Odufuwa · Lagos, Nigeria</span>
+  </div>
+</footer>
+
+<script>
+// Mobile nav
+(function(){
+  var t=document.querySelector('.nav-toggle'), l=document.querySelector('.nav-links');
+  t.addEventListener('click',function(){
+    var open=l.classList.toggle('open');
+    t.setAttribute('aria-expanded',open);
+    t.textContent=open?'✕':'☰';
+  });
+  l.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){
+    l.classList.remove('open');t.textContent='☰';t.setAttribute('aria-expanded',false);
+  });});
+})();
+// Reveal on scroll
+(function(){
+  var els=document.querySelectorAll('.reveal');
+  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return;}
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target);}});
+  },{threshold:.12});
+  els.forEach(function(e){io.observe(e);});
+})();
+document.getElementById('yr').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>

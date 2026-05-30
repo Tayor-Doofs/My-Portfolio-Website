@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vendor Study — Odutayo Odufuwa</title>
+<meta name="description" content="A short, private study on how vendors in Nigeria sell on Instagram & WhatsApp. By Odutayo Odufuwa, data analyst, Lagos.">
+<meta property="og:title" content="Quick study for online vendors in Nigeria">
+<meta property="og:description" content="1-minute, private. Help a Lagos data analyst understand how vendors sell on IG & WhatsApp. Nothing to buy.">
+<meta property="og:type" content="website">
+<style>
+  /* System fonts only — keeps the page light on 3G for vendors */
+  :root{
+    --paper:#FBF7EF; --card:#FFFDF8; --ink:#181612; --mute:#6A6256;
+    --teal:#0E5A52; --teal-deep:#0A423C; --line:#E4DBCA;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--paper);color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+    font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased;}
+  .wrap{max-width:680px;margin:0 auto;padding:0 18px}
+
+  /* top bar with verify-me link back to the portfolio */
+  .bar{border-bottom:1px solid var(--line);background:rgba(251,247,239,.9);
+    position:sticky;top:0;backdrop-filter:blur(8px)}
+  .bar-in{max-width:680px;margin:0 auto;padding:12px 18px;display:flex;
+    align-items:center;justify-content:space-between;gap:12px}
+  .brand{display:flex;align-items:center;gap:9px;font-weight:600;font-size:15px}
+  .brand .mark{width:30px;height:30px;border-radius:8px;background:var(--teal);color:#fff;
+    display:grid;place-items:center;font-weight:700;font-size:14px}
+  /* ▼ set this href to your live portfolio URL ▼ */
+  .bar a.verify{font-size:13px;color:var(--teal);font-weight:600;white-space:nowrap}
+
+  .intro{padding:30px 0 8px}
+  .pill{display:inline-block;background:#E7F0EA;color:var(--teal);font-size:13px;font-weight:700;
+    padding:5px 12px;border-radius:999px;margin-bottom:14px}
+  h1{font-size:clamp(24px,5vw,30px);line-height:1.2;letter-spacing:-.02em;margin-bottom:12px}
+  .intro p{color:#3A352B;margin-bottom:12px}
+  .who{display:flex;align-items:center;gap:12px;background:var(--card);border:1px solid var(--line);
+    border-radius:14px;padding:14px 16px;margin:18px 0 6px}
+  .who .ava{width:44px;height:44px;border-radius:50%;background:var(--teal);color:#fff;flex:0 0 auto;
+    display:grid;place-items:center;font-weight:700}
+  .who .txt{font-size:14.5px;color:#3A352B}
+  .who .txt b{color:var(--ink)}
+  .who .txt a{color:var(--teal);font-weight:600}
+
+  .formcard{background:var(--card);border:1px solid var(--line);border-radius:18px;
+    overflow:hidden;margin:18px 0 8px;box-shadow:0 10px 30px -22px rgba(24,22,18,.5)}
+  iframe{width:100%;border:0;display:block;min-height:1500px}
+  .fallback{padding:18px;text-align:center;font-size:14.5px;color:var(--mute);border-top:1px solid var(--line)}
+  .fallback a{color:var(--teal);font-weight:700}
+
+  footer{padding:26px 0 40px;text-align:center;color:var(--mute);font-size:13px}
+</style>
+</head>
+<body>
+
+<div class="bar">
+  <div class="bar-in">
+    <span class="brand"><span class="mark">OO</span> Odutayo Odufuwa</span>
+    <!-- ▼ REPLACE with your live portfolio link so vendors can verify you ▼ -->
+    <a class="verify" href="odutayo.netlify.app">Who is this? →</a>
+  </div>
+</div>
+
+<div class="wrap">
+
+  <div class="intro">
+    <span class="pill">1–2 minutes • private • nothing to buy</span>
+    <h1>How do vendors in Nigeria really sell online? 🙏</h1>
+    <p>Hi, I'm Odutayo — a data analyst here in Lagos. I'm running a short study on how people sell on Instagram &amp; WhatsApp. No signup, no catch, and your answers stay private — I won't share them.</p>
+
+    <div class="who">
+      <span class="ava">OO</span>
+      <span class="txt"><b>Odutayo Odufuwa</b> · Data Analyst, Lagos.
+        Curious who I am? <a href="odutayo.netlify.app" target="_blank" rel="noopener">See my work →</a>
+      </span>
+    </div>
+  </div>
+
+  <div class="formcard">
+    <!-- ▼▼ PASTE YOUR GOOGLE APPS SCRIPT WEB APP URL (ends in /exec) BELOW ▼▼ -->
+    <iframe
+      src="https://script.google.com/macros/s/AKfycbwVYenTTIi2VAfFz6fu7V9M-UHpCviutxAtpMvJ1loyByhqLdpQE9ZBKqRi8ilkJtQI/exec"
+      title="Vendor survey"
+      loading="lazy"></iframe>
+    <div class="fallback">
+      Form not loading?
+      <!-- ▼ same /exec URL here as a direct link ▼ -->
+      <a href="https://script.google.com/macros/s/AKfycbwVYenTTIi2VAfFz6fu7V9M-UHpCviutxAtpMvJ1loyByhqLdpQE9ZBKqRi8ilkJtQI/exec" target="_blank" rel="noopener">Open it in a new tab →</a>
+    </div>
+  </div>
+
+  <footer>Thank you for your time. — Odutayo</footer>
+
+</div>
+
+</body>
+</html>
