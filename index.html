@@ -227,6 +227,17 @@ footer.foot .mono{font-size:12px}
 .route h3{font-family:"Fraunces",serif;font-size:22px;font-weight:500;margin:8px 0 8px;letter-spacing:-.01em}
 .route p{font-size:14.5px;color:#3A352B;margin:0 0 18px;line-height:1.5}
 .route .acts{margin-top:auto;display:flex;gap:10px;flex-wrap:wrap}
+/* Live courses */
+.courses{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:8px}
+.course{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px;display:flex;flex-direction:column;transition:transform .16s ease,border-color .16s}
+.course:hover{transform:translateY(-3px);border-color:var(--line-strong)}
+.course .lvl{font-family:"JetBrains Mono",monospace;font-size:11px;color:var(--teal);letter-spacing:.05em}
+.course h3{font-family:"Fraunces",serif;font-size:24px;font-weight:500;margin:6px 0 12px;letter-spacing:-.01em}
+.course .ses-list{margin-bottom:14px}
+.c-price{margin-top:auto;padding-top:14px;border-top:1px solid var(--line);font-family:"Fraunces",serif;font-size:23px;font-weight:500;color:var(--ink)}
+.c-price span{font-family:"JetBrains Mono",monospace;font-size:14px;color:var(--ink-mute);font-weight:400;margin-left:4px}
+.fmt-line{font-size:14px;color:var(--ink-mute);margin:14px 0 24px;font-family:"JetBrains Mono",monospace}
+@media(max-width:880px){.courses{grid-template-columns:1fr}}
 
 /* ---------- RESPONSIVE ---------- */
 @media(max-width:880px){
@@ -426,33 +437,66 @@ footer.foot .mono{font-size:12px}
     <p class="reveal" style="max-width:64ch;color:var(--ink-mute);margin:-22px 0 36px;font-size:18px">
       Alongside my work, I train people in data — from total beginners to advanced — as a facilitator at <b style="color:var(--ink)">Dataleum</b> and <b style="color:var(--ink)">Byte Analytics</b>, plus private one-on-one tutoring.
     </p>
-    <div class="subj-grid">
-      <div class="subj reveal"><div class="lvl mono">BEGINNER → ADVANCED</div><h3>Python</h3><p>From first script to pandas, EDA, and automation.</p></div>
-      <div class="subj reveal"><div class="lvl mono">BEGINNER → ADVANCED</div><h3>SQL</h3><p>Queries, joins, window functions, and query optimisation.</p></div>
-      <div class="subj reveal"><div class="lvl mono">BEGINNER → ADVANCED</div><h3>Power BI</h3><p>Data modelling, DAX, and dashboards that get used.</p></div>
-      <div class="subj reveal"><div class="lvl mono">BEGINNER → ADVANCED</div><h3>Excel</h3><p>From formulas to pivot tables, and fast, clean analysis.</p></div>
-      <div class="subj reveal"><div class="lvl mono">BEGINNER → ADVANCED</div><h3>Automation</h3><p>Connect apps and remove the busywork with Zapier.</p></div>
+    <!-- Live 1-on-1 structured courses (dual pricing) -->
+    <div class="reveal" style="margin-top:4px;margin-bottom:8px">
+      <span class="lvl mono" style="color:var(--teal);font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.08em">LIVE · 1-ON-1 · ONLINE</span>
+      <h3 class="serif" style="font-size:clamp(22px,3vw,30px);font-weight:500;margin:8px 0 8px;letter-spacing:-.01em">Structured courses, taught privately</h3>
+      <p style="max-width:60ch;color:var(--ink-mute);font-size:17px">Private, senior instruction paced entirely to you &mdash; not a crowded cohort. Direct access to someone who has built data systems in industry across nine African markets.</p>
+      <p class="fmt-line">2 hrs/day · 2 days/week · materials, guidance &amp; ongoing consultation included</p>
     </div>
-    <div class="routes">
-      <div class="route reveal">
-        <div class="lvl mono">SELF-PACED</div>
-        <h3>Learn at your own pace</h3>
-        <p>On-demand video courses you can take anytime — no live session needed. Launching soon on Teachable.</p>
-        <div class="acts">
-          <!-- public school URL (not the admin link) -->
-          <a class="btn ghost" href="https://odutayo-odufuwa-s-school.teachable.com" target="_blank" rel="noopener">Visit my school →</a>
-        </div>
+
+    <div class="courses">
+      <div class="course reveal">
+        <div class="lvl mono">BEGINNER → ADVANCED · 4 WEEKS</div>
+        <h3>Excel</h3>
+        <ul class="ses-list"><li>Formulas, functions &amp; data cleaning</li><li>Lookups (VLOOKUP, INDEX/MATCH) &amp; logical functions</li><li>Pivot tables &amp; conditional formatting</li><li>Dashboards &amp; data visualisation</li><li>Power Query &amp; Power Pivot</li></ul>
+        <div class="c-price">₦216,000 <span>· £140</span></div>
       </div>
-      <div class="route reveal">
-        <div class="lvl mono">LIVE · 1-ON-1</div>
-        <h3>Learn with me directly</h3>
-        <p>Private tutoring and live sessions, paced to you. See the full curriculum, then book a slot.</p>
-        <div class="acts">
-          <a class="btn" href="https://selar.com/781z515917" target="_blank" rel="noopener">Book a session →</a>
-          <a class="btn ghost" href="https://ionian-leaf-53e.notion.site/COURSE-BREAKDOWN-fa828ebe329e47c6a978124dff5371c3" target="_blank" rel="noopener">Course breakdown</a>
-        </div>
+      <div class="course reveal">
+        <div class="lvl mono">BEGINNER → ADVANCED · 4 WEEKS</div>
+        <h3>Power BI</h3>
+        <ul class="ses-list"><li>Data modelling &amp; relationships</li><li>Power Query transformations</li><li>DAX measures &amp; calculations</li><li>Interactive, shareable dashboards</li><li>Publishing &amp; sharing reports</li></ul>
+        <div class="c-price">₦238,000 <span>· £150</span></div>
+      </div>
+      <div class="course reveal">
+        <div class="lvl mono">BEGINNER → ADVANCED · 4 WEEKS</div>
+        <h3>SQL</h3>
+        <ul class="ses-list"><li>Querying, filtering &amp; sorting</li><li>Joins across multiple tables</li><li>Aggregations &amp; grouping</li><li>Subqueries &amp; CTEs</li><li>Window functions &amp; optimisation</li></ul>
+        <div class="c-price">₦248,000 <span>· £160</span></div>
+      </div>
+      <div class="course reveal">
+        <div class="lvl mono">BEGINNER → ADVANCED · 6 WEEKS</div>
+        <h3>Python</h3>
+        <ul class="ses-list"><li>Python foundations &amp; data structures</li><li>pandas for data manipulation</li><li>Exploratory data analysis (EDA)</li><li>Visualisation (matplotlib / seaborn)</li><li>Automating analysis workflows</li></ul>
+        <div class="c-price">₦421,000 <span>· £270</span></div>
+      </div>
+      <div class="course reveal">
+        <div class="lvl mono">BEGINNER → ADVANCED · 2 WEEKS</div>
+        <h3>Automation</h3>
+        <ul class="ses-list"><li>Connecting apps &amp; building Zaps</li><li>Triggers, actions &amp; filters</li><li>Automating reports &amp; alerts</li><li>Multi-step workflows</li><li>Cutting out repetitive manual work</li></ul>
+        <div class="c-price">₦124,000 <span>· £80</span></div>
       </div>
     </div>
+
+    <!-- Bundle -->
+    <div class="studynote reveal" style="margin-top:20px">
+      <div>
+        <span class="snote-pill">Best value</span>
+        <h3>The full data stack &mdash; all 5 courses</h3>
+        <p>Excel · Power BI · SQL · Python · Automation. One path from spreadsheets to end-to-end analytics, ~20% cheaper than booking separately.</p>
+      </div>
+      <div style="text-align:right;white-space:nowrap">
+        <div style="font-family:'Fraunces',serif;font-size:30px;color:#fff;font-weight:500">₦995,000 <span style="font-size:16px;color:#8FB6D6">· £640</span></div>
+        <div style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#8FB6D6;margin-top:5px">save over ₦250,000</div>
+      </div>
+    </div>
+
+    <div class="reveal" style="margin-top:24px;display:flex;gap:12px;flex-wrap:wrap;align-items:center">
+      <a class="btn" href="mailto:tayodufuwa@gmail.com?subject=Course%20enrolment%20enquiry">Enrol or ask a question &#8594;</a>
+      <a class="btn ghost" href="https://ionian-leaf-53e.notion.site/COURSE-BREAKDOWN-fa828ebe329e47c6a978124dff5371c3" target="_blank" rel="noopener">Full course breakdown</a>
+    </div>
+
+    <p class="ses-note reveal" style="margin-top:22px">Prefer to learn at your own pace? Self-paced video courses are <b style="color:var(--ink)">coming soon</b> on <a href="https://odutayo-odufuwa-s-school.teachable.com" target="_blank" rel="noopener" style="color:var(--teal);font-weight:600">Teachable</a>.</p>
   </div>
 </section>
 
